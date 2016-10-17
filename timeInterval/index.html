@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>timeInterval.html</title>
+  </head>
+
+  <body>
+    <p id="status">Status</p>
+    <input type="button" onclick="main();" value="Run">
+    <input type="button" onclick="stop();" value="Stop">
+    <input type="button" onclick="empty()" value="Clear">
+    <input type="button" onclick="x=0; y=0; setStatus('Reset')" value="Reset">
+    <p id="result">Result displayed here</p>
+    <script type = "text/javascript">
+      var x = 0;
+      var y = 0;
+      var tmpstr = "";
+      var refreshIntervalId;
+    </script>
+    <script type="text/javascript" src="timeInterval.js"></script>
+  </body>
+</html>
